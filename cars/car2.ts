@@ -26,7 +26,7 @@ class Car2 {
   }
 
   get color():string | undefined {
-    return this._color
+    return `Color: ${this._color}`
   }
 
   get model(): string {
