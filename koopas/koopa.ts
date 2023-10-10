@@ -11,7 +11,6 @@ export default abstract class Koopa {
 
   constructor(protected _age: number){} 
 
-  abstract defense():void
 
   walk():void {
     console.log('Walking On 2 feet')

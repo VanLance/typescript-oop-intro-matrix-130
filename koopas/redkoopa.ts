@@ -1,6 +1,7 @@
 import Koopa from './koopa'
+import { Defense } from './interfaces'
 
-export default class RedKoopa extends Koopa {
+export default class RedKoopa extends Koopa implements Defense {
   static className = 'RedKoopa'
   color: string
 
@@ -13,7 +14,7 @@ export default class RedKoopa extends Koopa {
     console.log(`${RedKoopa.className} ${this._age}`)
   }
 
-  override defense(): void {
+  defense(): void {
       console.log("Tucks into shell and spins for D")
   }
 }

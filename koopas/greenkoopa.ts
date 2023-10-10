@@ -1,6 +1,7 @@
+import { Defense } from './interfaces'
 import Koopa from './koopa'
 
-export default class GreenKoopa extends Koopa {
+export default class GreenKoopa extends Koopa implements Defense {
   static className = 'GreenKoopa'
 
   get age():number{
